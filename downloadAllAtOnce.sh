@@ -36,3 +36,5 @@ testAndDownload "zoom.us" "zoom"
 
 echo ""
 echo "download ended"
+echo "these Apps installed"
+brew list

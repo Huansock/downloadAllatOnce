@@ -9,10 +9,12 @@ if ! type "brew" > /dev/null; then
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/"$(whoami)"/.zprofile
     eval "$(opt/homebrew/bin/brew shellenv)"
     else
-        echo '\n you have already brew in your terminal!'
+        echo ""
+        echo 'you have already brew in your terminal!'
 fi
 
 # install all brew apps we need
-brew install --cask microsoft-outlook slack google-chrome zoom
+brew install --cask microsoft-office slack google-chrome zoom
 
-echo "\n download ended"
+echo ""
+echo "download ended"

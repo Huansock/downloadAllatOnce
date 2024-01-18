@@ -6,8 +6,6 @@ Sie können slack, chrome, microsoft-365, zoom mit einem Kommandozeile herunterl
 
 **Zuerst brauchen wir admin**
 
-![admin](./images/admin.png)
-
 ## Auf Deutsch
 
 1. **Öffnen Sie Terminal**
@@ -27,12 +25,11 @@ Sie können slack, chrome, microsoft-365, zoom mit einem Kommandozeile herunterl
     ![Kopie](./images/kopie.png) 
 
 3. **Fügen Sie den Befehl in Terminal ein. Drucken Sie die Eingabetaste.**
-
-![Befehl](./images/Befehl.png)
+    ![Befehl](./images/Befehl.png)
 4. **Wenn Sie alle Apps aktualisieren möchten, nutzen Sie diese Befehl.**
-```bash
-brew update
-```
+    ```bash
+    brew update
+    ```
 
 ## In English
 
@@ -40,28 +37,27 @@ you can download microsoft-365, slack, chrome, zoom at once!
 
 1. **Open Terminal**
 
-![other](./images/andere.png)
-![Terminal](./images/terminal.png)
+    ![other](./images/andere.png)
+    ![Terminal](./images/terminal.png)
 
 2. **Copy this command.**
 
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Huansock/downloadAllatOnce/main/downloadAllAtOnce.sh)"
+    ```
+    <br/>
+    You can simply click here.
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Huansock/downloadAllatOnce/main/downloadAllAtOnce.sh)"
-```
-<br/>
-
-You can simply click here.
-![bash](./images/kopie.png)
+    ![bash](./images/kopie.png)
 
 3. **Paste it in Terminal**
 
-Paste the command into Terminal. Press the Enter key.
+    Paste the command into Terminal. Press the Enter key.
 
-![run](./images/Befehl.png)
+    ![run](./images/Befehl.png)
 
 4. **If you want to update all apps, use this command.**
 
-```bash
-brew update
-```
+    ```bash
+    brew update
+    ```

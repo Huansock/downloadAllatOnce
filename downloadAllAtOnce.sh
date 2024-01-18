@@ -11,6 +11,6 @@ if ! type "brew" > /dev/null; then
 fi
 
 # install all brew apps we need
-brew install --cask microsoft-office slack googel-chrome zoom
+brew install --cask microsoft-office slack google-chrome zoom
 
 echo "download ends successfully"

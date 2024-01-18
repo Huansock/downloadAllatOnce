@@ -25,8 +25,11 @@ Sie können slack, chrome, microsoft-365, zoom mit einem Kommandozeile herunterl
     ![Kopie](./images/kopie.png) 
 
 3. **Fügen Sie den Befehl in Terminal ein. Drucken Sie die Eingabetaste.**
+   
     ![Befehl](./images/Befehl.png)
+
 4. **Wenn Sie alle Apps aktualisieren möchten, nutzen Sie diese Befehl.**
+   
     ```bash
     brew update
     ```

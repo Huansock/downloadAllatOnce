@@ -8,9 +8,11 @@ if ! type "brew" > /dev/null; then
     # Add Homebrew to your PATH 
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/"$(whoami)"/.zprofile
     eval "$(opt/homebrew/bin/brew shellenv)"
+    else
+        echo '\n you have already brew in your terminal!'
 fi
 
 # install all brew apps we need
-brew install --cask microsoft-office slack google-chrome zoom
+brew install --cask microsoft-outlook slack google-chrome zoom
 
-echo "download ends successfully"
+echo "\n download ended"

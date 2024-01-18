@@ -22,3 +22,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Add alias in zsh
 echo "alias py="python3.12"" >> ~/.zshrc
 echo "alias nv="nvim"" >> ~/.zshrc
+

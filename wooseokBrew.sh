@@ -18,8 +18,8 @@ echo "try to install all brew apps"
 # download brew and install all brewapps what I want
 brew install --cask alt-tab alacritty raycast yippy spotify visual-studio-code && brew install htop neovim bat tree tmux tldr
 
-# install oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# # install oh my zsh
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Add alias in zsh
 echo "alias py="python3.12"" >> ~/.zshrc

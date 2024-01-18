@@ -2,7 +2,9 @@
 
 # Chck if user has brew command or not
 if ! type "brew" > /dev/null; then
+
     # download brew
+    echo "you don't have brew in your terminal"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     # Add Homebrew to your PATH 
@@ -14,8 +16,23 @@ if ! type "brew" > /dev/null; then
 fi
 
 # install all brew apps we need
-echo "try to install microsoft-offic, slack, google-chrome, zoom \n"
-brew install --cask microsoft-office slack google-chrome zoom
+echo "try to install microsoft-offic, slack, google-chrome, zoom"
+
+testAndDownload (){
+    if test -d "/Applications/$1.app"; then
+        echo "you have already $1"
+    else 
+        echo "download $1"
+        brew install --cask $2
+    fi
+}
+
+testAndDownload "Microsoft Outlook" "microsoft-office"
+testAndDownload "Slack" "slack"
+testAndDownload "Google Chrome" "google-chrome"
+testAndDownload "zoom.us" "zoom"
+
+
 
 echo ""
 echo "download ended"

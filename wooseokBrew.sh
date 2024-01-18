@@ -16,7 +16,24 @@ fi
 
 echo "try to install all brew apps"
 # download brew and install all brewapps what I want
-brew install --cask alt-tab alacritty raycast yippy spotify visual-studio-code && brew install htop neovim bat tree tmux tldr
+
+testAndDownload (){
+    if test -d "/Applications/$1.app"; then
+        echo "you have already $1"
+    else 
+        echo "download $1"
+        brew install --cask $2
+    fi
+}
+
+testAndDownload "AltTab" "alt-tab"
+testAndDownload "Alacritty" "alacritty"
+testAndDownload "Raycast" "raycast"
+testAndDownload "Yippy" "yippy"
+testAndDownload "Spotify" "spotify"
+testAndDownload "Visual Studio Code" "visual-studio-code"
+
+brew install htop neovim bat tree tmux tldr
 
 # # install oh my zsh
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

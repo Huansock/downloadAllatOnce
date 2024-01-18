@@ -37,4 +37,7 @@ testAndDownload "zoom.us" "zoom"
 echo ""
 echo "download ended"
 echo "these Apps installed"
+ehco "Diese Anwendungen sind herunterladet."
 brew list
+echo "If you want update all Apps which you installed, you can just write "brew update" in your terminal."
+echo "Wenn Sie alle Anwendungen aktualiesieren, können Sie einfach "brew update" in Terminal schreiben."

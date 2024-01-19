@@ -42,3 +42,7 @@ brew install htop neovim bat tree tmux tldr
 echo "alias py="python3.12"" >> ~/.zshrc
 echo "alias nv="nvim"" >> ~/.zshrc
 
+# Change right Command key to fn key.
+ hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x7000000E7,"HIDKeyboardModifierMappingDst":0xFF00000003}]}'
+
+# if you wannt to reset it use     hidutil property --set '{"UserKeyMapping":[]}' 

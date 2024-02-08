@@ -64,3 +64,5 @@ you can download microsoft-365, slack, chrome, zoom at once!
     ```bash
     brew update
     ```
+
+That's all enjoy your enviroment!
